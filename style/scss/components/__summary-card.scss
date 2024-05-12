@@ -25,27 +25,9 @@
     line-height: 1.3rem;
   }
 
-  &__proceed-payment-btn {
-    width: 75%;
-    padding: 15px;
-    font-size: 0.8rem;
-    text-decoration: none;
-    background-color: $bright-blue;
-    color: $pale-blue;
-    font-weight: $font-weight-700;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 10px 15px $desaturated-blue;
-  }
-
-  &__cancel-link {
-    font-size: 0.8rem;
-    color: $desaturated-blue;
-    font-weight: $font-weight-900;
-    text-decoration: none;
-  }
-
   @import './_header-img';
   @import './_content';
   @import './_plan-presentation';
+  @import './proceed-payment-btn';
+  @import './cancel-link';
 }
