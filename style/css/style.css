@@ -111,12 +111,6 @@ body .summary-card__proceed-payment-btn {
   z-index: 1;
   transition: box-shadow 0.5s linear;
 }
-body .summary-card__proceed-payment-btn:hover {
-  box-shadow: 0 3px 5px hsl(224, 23%, 55%);
-}
-body .summary-card__proceed-payment-btn:hover::before {
-  transform: scaleX(1);
-}
 body .summary-card__proceed-payment-btn::before {
   content: "";
   display: block;
@@ -128,9 +122,15 @@ body .summary-card__proceed-payment-btn::before {
   right: 0;
   border-radius: 10px;
   transform: scaleX(0);
-  transform-origin: right;
+  transform-origin: left;
   z-index: -1;
   transition: transform 0.4s linear;
+}
+body .summary-card__proceed-payment-btn:hover {
+  box-shadow: 0 3px 5px hsl(224, 23%, 55%);
+}
+body .summary-card__proceed-payment-btn:hover::before {
+  transform: scaleX(1);
 }
 body .summary-card__cancel-link {
   font-size: 0.8rem;
