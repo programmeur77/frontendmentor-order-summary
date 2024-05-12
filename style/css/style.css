@@ -78,10 +78,23 @@ body .summary-card__plan-presentation-change-link {
   font-size: 0.8rem;
   color: #6255e7;
   font-weight: 700;
+  text-decoration: none;
+  position: relative;
+}
+body .summary-card__plan-presentation-change-link::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #6255e7;
+  padding-top: 5px;
+  top: 0;
+  transform: translateY(0) rotateY(0);
+  transition: transform 0.4s linear;
 }
 body .summary-card__plan-presentation-change-link:hover {
   font-weight: 700;
-  text-decoration: none;
+}
+body .summary-card__plan-presentation-change-link:hover::after {
+  transform: translateY(-25px) rotateY(360deg);
 }
 body .summary-card__proceed-payment-btn {
   width: 75%;
