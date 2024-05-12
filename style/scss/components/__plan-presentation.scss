@@ -20,5 +20,12 @@
 
   &-change-link {
     font-size: 0.8rem;
+    color: lighten($bright-blue, 10%);
+    font-weight: $font-weight-700;
+
+    &:hover {
+      font-weight: $font-weight-700;
+      text-decoration: none;
+    }
   }
 }
