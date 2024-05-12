@@ -10,13 +10,90 @@ body {
   display: grid;
   place-items: center;
   background-image: url("./../../assets/images/pattern-background-desktop.svg");
-  font-family: "Red hat Display", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
+  font-weight: 500;
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 550px) {
   body {
     background-image: url("./../../assets/images/pattern-background-mobile.svg");
   }
+}
+body .summary-card {
+  width: 30%;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 20px;
+  padding-bottom: 30px;
+  display: grid;
+  gap: 1.3rem;
+  justify-items: center;
+  box-shadow: 0 3px 40px hsl(224, 23%, 55%);
+}
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  body .summary-card {
+    width: 80%;
+  }
+}
+body .summary-card__card-title {
+  font-size: 1.5rem;
+  color: hsl(223, 47%, 23%);
+}
+body .summary-card__card-description {
+  width: 60%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: hsl(224, 23%, 55%);
+  line-height: 1.3rem;
+}
+body .summary-card__proceed-payment-btn {
+  width: 75%;
+  padding: 15px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 94%);
+  font-weight: 700;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px hsl(224, 23%, 55%);
+}
+body .summary-card__cancel-link {
+  font-size: 0.8rem;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  text-decoration: none;
+}
+body .summary-card__header-img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+body .summary-card__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 1.3rem;
+}
+body .summary-card__plan-presentation {
+  width: 75%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 94%);
+  border-radius: 10px;
+}
+body .summary-card__plan-presentation-type {
+  color: hsl(223, 47%, 23%);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+body .summary-card__plan-presentation-price {
+  font-size: 0.9rem;
+  color: hsl(224, 23%, 55%);
+}
+body .summary-card__plan-presentation-change-link {
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */
