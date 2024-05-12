@@ -3,3 +3,7 @@
 
 # Prettier config file
 .prettierrc
+
+# NPM config file and directories
+package-lock.json
+node_modules
