@@ -22,10 +22,25 @@
     font-size: 0.8rem;
     color: lighten($bright-blue, 10%);
     font-weight: $font-weight-700;
+    text-decoration: none;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      border-bottom: 2px solid lighten($bright-blue, 10%);
+      padding-top: 5px;
+      top: 0;
+      transform: translateY(0) rotateY(0);
+      transition: transform 0.4s linear;
+    }
 
     &:hover {
       font-weight: $font-weight-700;
-      text-decoration: none;
+
+      &::after {
+        transform: translateY(-25px) rotateY(360deg);
+      }
     }
   }
 }
