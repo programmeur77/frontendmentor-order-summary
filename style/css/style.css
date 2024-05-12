@@ -45,24 +45,6 @@ body .summary-card__card-description {
   color: hsl(224, 23%, 55%);
   line-height: 1.3rem;
 }
-body .summary-card__proceed-payment-btn {
-  width: 75%;
-  padding: 15px;
-  font-size: 0.8rem;
-  text-decoration: none;
-  background-color: hsl(245, 75%, 52%);
-  color: hsl(225, 100%, 94%);
-  font-weight: 700;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 10px 15px hsl(224, 23%, 55%);
-}
-body .summary-card__cancel-link {
-  font-size: 0.8rem;
-  color: hsl(224, 23%, 55%);
-  font-weight: 900;
-  text-decoration: none;
-}
 body .summary-card__header-img {
   width: 100%;
   border-radius: 20px 20px 0 0;
@@ -94,6 +76,58 @@ body .summary-card__plan-presentation-price {
 }
 body .summary-card__plan-presentation-change-link {
   font-size: 0.8rem;
+  color: #6255e7;
+  font-weight: 700;
+}
+body .summary-card__plan-presentation-change-link:hover {
+  font-weight: 700;
+  text-decoration: none;
+}
+body .summary-card__proceed-payment-btn {
+  width: 75%;
+  padding: 15px;
+  position: relative;
+  font-size: 0.8rem;
+  text-decoration: none;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 94%);
+  font-weight: 700;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px hsl(224, 23%, 55%);
+  z-index: 1;
+  transition: box-shadow 0.5s linear;
+}
+body .summary-card__proceed-payment-btn:hover {
+  box-shadow: 0 3px 5px hsl(224, 23%, 55%);
+}
+body .summary-card__proceed-payment-btn:hover::before {
+  transform: scaleX(1);
+}
+body .summary-card__proceed-payment-btn::before {
+  content: "";
+  display: block;
+  background-color: #6255e7;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: right;
+  z-index: -1;
+  transition: transform 0.4s linear;
+}
+body .summary-card__cancel-link {
+  font-size: 0.8rem;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+body .summary-card__cancel-link:hover {
+  color: hsl(223, 47%, 23%);
 }
 
 /*# sourceMappingURL=style.css.map */
