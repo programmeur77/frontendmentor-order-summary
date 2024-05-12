@@ -1,0 +1,11 @@
+&__cancel-link {
+  font-size: 0.8rem;
+  color: $desaturated-blue;
+  font-weight: $font-weight-900;
+  text-decoration: none;
+  transition: color 0.3s linear;
+
+  &:hover {
+    color: $dark-blue;
+  }
+}
