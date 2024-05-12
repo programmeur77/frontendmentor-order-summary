@@ -1,2 +1,5 @@
+#VSCode config Directory
+.DS_Store
+
 # Prettier config file
 .prettierrc
