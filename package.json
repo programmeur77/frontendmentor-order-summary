@@ -1,0 +1,22 @@
+{
+  "name": "order-summary-component",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programmeur77/frontendmentor-order-summary.git"
+  },
+  "author": "Benoit Puech / FrontendMentor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/programmeur77/frontendmentor-order-summary/issues"
+  },
+  "homepage": "https://github.com/programmeur77/frontendmentor-order-summary#readme",
+  "devDependencies": {
+    "sass": "^1.77.1"
+  }
+}
