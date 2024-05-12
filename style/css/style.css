@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+  background-image: url("./../../assets/images/pattern-background-desktop.svg");
+  font-family: "Red hat Display", sans-serif;
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  body {
+    background-image: url("./../../assets/images/pattern-background-mobile.svg");
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
