@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./style/scss/*.scss ./style/css/style.css"
+    "sass": "sass --watch ./style/scss/*.scss ./style/css/style.css",
+    "prefix": "postcss --watch ./style/css/style.css --use autoprefixer -d ./style/css/prefixed/style-prefixed.css"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,9 @@
   },
   "homepage": "https://github.com/programmeur77/frontendmentor-order-summary#readme",
   "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
     "sass": "^1.77.1"
   }
 }
